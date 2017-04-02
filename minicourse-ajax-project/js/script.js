@@ -45,7 +45,7 @@ function loadData() {
     //},8000)
 
     $.ajax({
-        url: "https://en.wikxxxipedia.org/w/api.php?action=opensearch&search="+city+"&format=json&callback=wikiCallback",
+        url: "https://en.wikipedia.org/w/api.php?action=opensearch&search="+city+"&format=json&callback=wikiCallback",
         dataType: "jsonp",
         success: function (response) {
             articleTitles = response[1];
